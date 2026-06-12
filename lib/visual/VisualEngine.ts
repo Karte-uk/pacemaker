@@ -22,12 +22,29 @@ const DEFAULT_CONFIG: SceneConfig = {
 };
 
 function createScene(type: SceneType): VisualScene {
+
   switch (type) {
-    case 'waveform':  return new WaveformScene();
-    case 'bars':      return new BarsScene();
-    case 'circular':  return new CircularScene();
-    case 'particles': return new ParticleScene();
+
+    case 'waveform':
+
+      return new WaveformScene();
+
+    case 'bars':
+
+      return new BarsScene();
+
+    case 'circular':
+
+      return new CircularScene();
+
+    case 'particles':
+
+      return new ParticleScene();
+
   }
+
+  return new BarsScene();
+
 }
 
 export class VisualEngine {

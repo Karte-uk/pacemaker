@@ -90,14 +90,6 @@ function SceneOptions({ config, onChange }: Props) {
     );
   }
 
-  if (type === 'tunnel') {
-    return (
-      <Section label="Tunnel Options">
-        <Slider label="Ring Count" value={config.rings} min={12} max={48} step={2} format={(v) => String(Math.round(v))} onChange={(v) => onChange({ rings: Math.round(v) })} />
-      </Section>
-    );
-  }
-
   return null;
 }
 

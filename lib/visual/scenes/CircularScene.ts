@@ -14,9 +14,10 @@ import type { AudioAnalysisData } from '@/types/audio';
 import { fbm, hexAlpha, lerpColor, hexToRgb } from '@/lib/visual/utils';
 
 const BAR_COUNT  = 128;
-const ORB_POOL   = 90;
+const ORB_COUNT   = 90;
 const MAX_WAVES  = 8;
 const MAX_PULSES = 6;
+const OUTER_COUNT = BAR_COUNT;
 
 export class CircularScene implements VisualScene {
   readonly type = 'circular' as const;

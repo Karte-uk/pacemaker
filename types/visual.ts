@@ -1,6 +1,6 @@
 import type { AudioAnalysisData } from './audio';
 
-export type SceneType = 'waveform' | 'bars' | 'circular' | 'particles';
+export type SceneType = 'waveform' | 'bars' | 'circular' | 'particles' | 'tunnel';
 
 export interface SceneConfig {
   type: SceneType;
